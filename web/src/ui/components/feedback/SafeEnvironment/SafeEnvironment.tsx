@@ -1,16 +1,16 @@
-import { SafeEnvironmentContainer } from "./SafeEnvironment.style"
-import { Container } from '@mui/material'
+import { SafeEnvironmentContainer } from "./SafeEnvironment.style";
+import { Container } from "@mui/material";
 
 const SafeEnvironment = () => {
-    return (
-        <div>
-            <SafeEnvironmentContainer>
-                <Container>
-                    Ambiente Seguro
-                </Container>
-            </SafeEnvironmentContainer>
-        </div>
-    )
-}
+  return (
+    <div>
+      <SafeEnvironmentContainer>
+        <Container>
+          Ambiente Seguro <i className={"twf-lock"} />
+        </Container>
+      </SafeEnvironmentContainer>
+    </div>
+  );
+};
 
-export default SafeEnvironment
+export default SafeEnvironment;
