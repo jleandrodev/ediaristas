@@ -1,11 +1,12 @@
-import { Inter } from 'next/font/google'
+import { NextPage } from 'next'
+import SafeEnvironment from 'ui/components/feedback/SafeEnvironment/SafeEnvironment'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
-      
+      <SafeEnvironment />
     </>
   )
 }
+
+export default Home
