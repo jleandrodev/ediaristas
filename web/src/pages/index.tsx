@@ -1,4 +1,9 @@
 import { Button, Container, Typography } from "@mui/material";
+import {
+  FormElementsContainer,
+  ProfessionalContainer,
+  ProfessionalPaper,
+} from "@styles/pages/index.style";
 import { NextPage } from "next";
 import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
 import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
@@ -16,26 +21,68 @@ const Home: NextPage = () => {
         }
       />
       <Container>
-        <TextFieldMask
-          mask={"99.999-999"}
-          label={"Digite seu CEP"}
-          fullWidth
-          variant={"outlined"}
-        />
-        <Typography color={"error"}>CEP inválido!</Typography>
-        <Button
-          variant={"contained"}
-          color={"secondary"}
-          sx={{ width: "220px" }}
-        >
-          Buscar
-        </Button>
-        <UserInformation
-          name={"John Doe"}
-          picture={"https://github.com/jleandrodev.png"}
-          rating={4}
-          description={"Maringá - PR"}
-        />
+        <FormElementsContainer>
+          <TextFieldMask
+            mask={"99.999-999"}
+            label={"Digite seu CEP"}
+            fullWidth
+            variant={"outlined"}
+          />
+          <Typography color={"error"}>CEP inválido!</Typography>
+          <Button
+            variant={"contained"}
+            color={"secondary"}
+            sx={{ width: "220px" }}
+          >
+            Buscar
+          </Button>
+        </FormElementsContainer>
+        <ProfessionalPaper>
+          <ProfessionalContainer>
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+            <UserInformation
+              name={"John Doe"}
+              picture={"https://github.com/jleandrodev.png"}
+              rating={4}
+              description={"Maringá - PR"}
+            />
+          </ProfessionalContainer>
+        </ProfessionalPaper>
       </Container>
     </>
   );
