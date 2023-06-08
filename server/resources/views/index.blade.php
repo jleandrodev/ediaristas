@@ -18,7 +18,11 @@
                     <th scope="row">{{ $diarista->id }}</th>
                     <td>{{ $diarista->nome_completo }}</td>
                     <td>{{ $diarista->telefone }}</td>
-                    <td></td>
+                    <td>
+                        <a href={{ route('diaristas.edit', $diarista) }} class="btn btn-primary">Atualizar</a>
+                        <a href={{ route('diaristas.destroy', $diarista) }}
+                            onclick="return confirm('Deseja deletar o cadastro?')" class="btn btn-danger">Deletar</a>
+                    </td>
                 </tr>
             @empty
                 <tr>
