@@ -56,6 +56,7 @@ const Home: NextPage = () => {
         </FormElementsContainer>
 
         {search &&
+          !erro &&
           (professionals.length > 0 ? (
             <ProfessionalPaper>
               <ProfessionalContainer>
