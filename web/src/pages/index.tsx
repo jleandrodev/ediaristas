@@ -77,8 +77,8 @@ const Home: NextPage = () => {
                   <Typography sx={{ mt: 5 }}>
                     ...e mais {otherProfessionals}
                     {otherProfessionals > 1
-                      ? "profissionais atendem"
-                      : "profissional atende"}
+                      ? " profissionais atendem "
+                      : " profissional atende "}
                     ao seu endereço
                   </Typography>
                 )}
