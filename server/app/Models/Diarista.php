@@ -11,7 +11,19 @@ class Diarista extends Model
 
     protected $fillable = ['nome_completo', 'cpf', 'email', 'telefone', 'cidade', 'logradouro', 'numero', 'bairro', 'complemento', 'cep', 'estado', 'codigo_ibge', 'foto_usuario'];
 
-    protected $visible = ['nome_completo', 'cidade', 'foto_usuario'];
+    protected $visible = ['nome_completo', 'cidade', 'foto_usuario', 'reputacao'];
+
+    protected $appends = ['reputacao'];
+
+    public function getFotoUsuarioAttribute(string $valor)
+    {
+        return config('app.url') . '/' . $valor;
+    }
+
+    public function getReputacaoAttribute($valor)
+    {
+        return mt_rand(1, 5);
+    }
 
     static public function buscaPorCodigoIbge(int $codigoIbge)
     {
