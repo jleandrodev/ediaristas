@@ -17,7 +17,7 @@
 <div class="mb-3">
     <label for="telefone" class="form-label">Telefone</label>
     <input value="{{ @$diarista->telefone }}" type="text" class="form-control" id="telefone" name="telefone"
-        required maxlength="15">
+        required maxlength="16">
 </div>
 <div class="mb-3">
     <label for="cep" class="form-label">CEP</label>
@@ -53,11 +53,6 @@
     <label for="estado" class="form-label">Estado</label>
     <input value="{{ @$diarista->estado }}" type="text" class="form-control" id="estado" name="estado" required
         maxlength="2">
-</div>
-<div class="mb-3">
-    <label for="codigo_ibge" class="form-label">Código IBGE</label>
-    <input value="{{ @$diarista->codigo_ibge }}" type="text" class="form-control" id="codigo_ibge"
-        name="codigo_ibge" required>
 </div>
 <div class="mb-3">
     <label for="foto_usuario" class="form-label">Foto</label>
